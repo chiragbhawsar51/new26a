@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preview Cover Letter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            border: 2px solid #000; /* Black border */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        h1 {
+            border-bottom: 2px solid #000; /* Black border below the heading */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            border: 1px solid #000; /* Black border around the link */
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #000;
+            margin-top: 20px;
+        }
+        a:hover {
+            background-color: #f0f0f0; /* Light grey background on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Preview Cover Letter</h1>
+        <div>
+            {{ html_content|safe }}
+        </div>
+        <a href="/download/{{ filename }}">Download Final Document</a>
+    </div>
+</body>
+</html>
